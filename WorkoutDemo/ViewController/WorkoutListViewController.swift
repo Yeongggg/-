@@ -20,7 +20,7 @@ class WorkoutListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setup()
+        setup() 
     }
     
     // MARK: - Custom Function

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01I-wH-Bhw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vgd-MY-Hno">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -85,7 +87,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dik-3Q-TiZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="j8n-S4-ztY" firstAttribute="centerX" secondItem="UWZ-jB-RiR" secondAttribute="centerX" id="1et-FV-Oba"/>
                             <constraint firstItem="bdN-jR-Y4R" firstAttribute="leading" secondItem="dik-3Q-TiZ" secondAttribute="leading" id="4KM-2l-oFz"/>
@@ -100,7 +103,6 @@
                             <constraint firstItem="j8n-S4-ztY" firstAttribute="top" secondItem="UWZ-jB-RiR" secondAttribute="bottom" constant="8" id="lOQ-9o-pxh"/>
                             <constraint firstItem="rHw-CF-BXi" firstAttribute="top" secondItem="dik-3Q-TiZ" secondAttribute="top" id="zeT-VA-9NE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dik-3Q-TiZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Zh-BZ-nad"/>
                     <connections>
@@ -114,7 +116,95 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
+            <point key="canvasLocation" x="1361" y="297"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SVw-V7-dwt">
+            <objects>
+                <viewController id="Vgd-MY-Hno" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oEW-WI-zpg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbx-RP-Ewx">
+                                <rect key="frame" x="149" y="307" width="117" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="장바구니 가기"/>
+                                <connections>
+                                    <segue destination="1XH-Pm-HvE" kind="show" id="5ER-fS-hnF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="메인 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-Rl-KAp">
+                                <rect key="frame" x="175" y="534" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4IT-2Y-Ilf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="VAU-DW-odv"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFP-aN-7Gl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1813" y="-1400"/>
+        </scene>
+        <!--내 바구니 함-->
+        <scene sceneID="swz-li-CMF">
+            <objects>
+                <tableViewController id="ccs-yK-umD" customClass="TableViewController" customModule="Fitness_Sport" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eGA-tQ-GXq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Vip-DX-Bcy">
+                                <rect key="frame" x="0.0" y="50" width="414" height="44.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vip-DX-Bcy" id="6jj-qd-aCy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="01I-wH-Bhw" kind="show" identifier="sgDetail" id="l7t-ys-DdH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ccs-yK-umD" id="Koj-o9-1ox"/>
+                            <outlet property="delegate" destination="ccs-yK-umD" id="L3Y-dG-r7n"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="내 바구니 함" id="Oru-pN-G89"/>
+                    <connections>
+                        <outlet property="tvListView" destination="eGA-tQ-GXq" id="Yg5-ma-TmB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ul0-UY-RP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="-534"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h2r-7C-6Qs">
+            <objects>
+                <navigationController id="1XH-Pm-HvE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cWy-8K-Ib3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="naj-cX-XRB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ccs-yK-umD" kind="relationship" relationship="rootViewController" id="0xg-eO-3v7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIv-31-Or0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="-1400"/>
         </scene>
         <!--Workout-->
         <scene sceneID="fnY-hx-3VM">
@@ -129,7 +219,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="83" id="j28-6T-bqm" customClass="WorkoutTableViewCell" customModule="Fitness_Sport" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="83"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j28-6T-bqm" id="tuG-rh-LX1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
@@ -184,6 +274,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="th5-0b-EoH"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="V0N-Ld-zVM" firstAttribute="leading" secondItem="th5-0b-EoH" secondAttribute="leading" id="BF0-If-MY2"/>
@@ -191,7 +282,6 @@
                             <constraint firstItem="V0N-Ld-zVM" firstAttribute="top" secondItem="th5-0b-EoH" secondAttribute="top" constant="10" id="SeG-pj-1oq"/>
                             <constraint firstItem="th5-0b-EoH" firstAttribute="trailing" secondItem="V0N-Ld-zVM" secondAttribute="trailing" id="yEY-Fc-ACF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="th5-0b-EoH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Workout" id="n4F-Ij-FfE"/>
                     <connections>
@@ -201,13 +291,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlu-Ju-6RX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147.82608695652175" y="133.92857142857142"/>
+            <point key="canvasLocation" x="1361" y="-534"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vOY-8F-og3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="01I-wH-Bhw" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mcN-Uz-jS7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kzi-hF-dGw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -219,10 +310,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ae-R3-wbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-762.31884057971024" y="133.92857142857142"/>
+            <point key="canvasLocation" x="243" y="-534"/>
         </scene>
     </scenes>
     <resources>
-        <image name="pause.fill" catalog="system" width="58" height="64"/>
+        <image name="pause.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

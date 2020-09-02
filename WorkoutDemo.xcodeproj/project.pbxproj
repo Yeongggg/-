@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593D9FA42AF6E8AA00D9956A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D9FA32AF6E8AA00D9956A /* TableViewController.swift */; };
 		814E54912359894B007FDA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E54902359894B007FDA85 /* AppDelegate.swift */; };
 		814E54932359894B007FDA85 /* WorkoutARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E54922359894B007FDA85 /* WorkoutARSceneViewController.swift */; };
 		814E54982359894B007FDA85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814E54962359894B007FDA85 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		593D9FA32AF6E8AA00D9956A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		814E548D2359894B007FDA85 /* Fitness Sport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Sport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814E54902359894B007FDA85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		814E54922359894B007FDA85 /* WorkoutARSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutARSceneViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		A3071E1623918460002AF4AD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				593D9FA32AF6E8AA00D9956A /* TableViewController.swift */,
 				A30492AE238FD3E1008F148C /* WorkoutListViewController.swift */,
 				814E54922359894B007FDA85 /* WorkoutARSceneViewController.swift */,
 			);
@@ -189,8 +192,9 @@
 		814E54852359894B007FDA85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Vishal Patel";
 				TargetAttributes = {
 					814E548C2359894B007FDA85 = {
@@ -239,6 +243,7 @@
 				A30492B523900947008F148C /* Constant.swift in Sources */,
 				A30492AF238FD3E1008F148C /* WorkoutListViewController.swift in Sources */,
 				A30492B3238FF995008F148C /* WorkoutModel.swift in Sources */,
+				593D9FA42AF6E8AA00D9956A /* TableViewController.swift in Sources */,
 				81BD9978236C2EAC007069BA /* WorkoutNode.swift in Sources */,
 				814E54932359894B007FDA85 /* WorkoutARSceneViewController.swift in Sources */,
 				A3071E0F2390FF68002AF4AD /* Extension.swift in Sources */,
@@ -296,6 +301,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -306,6 +312,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -356,6 +363,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,6 +374,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -390,14 +399,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				DEVELOPMENT_TEAM = U9Y45HZCX3;
 				INFOPLIST_FILE = WorkoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.WorkoutDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.WorkoutDemoOne;
 				PRODUCT_NAME = "Fitness Sport";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -411,14 +420,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				DEVELOPMENT_TEAM = U9Y45HZCX3;
 				INFOPLIST_FILE = WorkoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.WorkoutDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.WorkoutDemoOne;
 				PRODUCT_NAME = "Fitness Sport";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
