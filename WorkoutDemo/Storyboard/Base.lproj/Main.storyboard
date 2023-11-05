@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vgd-MY-Hno">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mq8-gT-zBw">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -19,14 +19,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="WorkoutARSceneViewController" customModule="Fitness_Sport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1of-gj-pND">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHw-CF-BXi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                             </arscnView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWZ-jB-RiR">
-                                <rect key="frame" x="82" y="732" width="250" height="80"/>
+                                <rect key="frame" x="70" y="631" width="250" height="80"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ccA-My-frm">
                                         <rect key="frame" x="-2" y="20" width="254" height="61"/>
@@ -46,7 +46,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8n-S4-ztY">
-                                <rect key="frame" x="184" y="820" width="46" height="46"/>
+                                <rect key="frame" x="172" y="719" width="46" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="0k8-JR-WTZ"/>
@@ -59,10 +59,10 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-jR-Y4R">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiX-iM-Y8n">
-                                        <rect key="frame" x="128" y="381" width="158" height="46"/>
+                                        <rect key="frame" x="116" y="353.66666666666669" width="158" height="46"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zU-Ge-T16">
                                                 <rect key="frame" x="33" y="15" width="92" height="16"/>
@@ -116,27 +116,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="297"/>
+            <point key="canvasLocation" x="1020" y="-461"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="SVw-V7-dwt">
             <objects>
-                <viewController id="Vgd-MY-Hno" sceneMemberID="viewController">
+                <viewController id="Vgd-MY-Hno" customClass="MainViewController" customModule="Fitness_Sport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oEW-WI-zpg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbx-RP-Ewx">
-                                <rect key="frame" x="149" y="307" width="117" height="69"/>
+                                <rect key="frame" x="137" y="579" width="117" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="장바구니 가기"/>
                                 <connections>
-                                    <segue destination="1XH-Pm-HvE" kind="show" id="5ER-fS-hnF"/>
+                                    <segue destination="ccs-yK-umD" kind="show" id="zBm-HL-zOA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="메인 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-Rl-KAp">
-                                <rect key="frame" x="175" y="534" width="64" height="21"/>
+                                <rect key="frame" x="163" y="542" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -152,26 +152,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFP-aN-7Gl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1813" y="-1400"/>
+            <point key="canvasLocation" x="-903.07692307692309" y="-1400.4739336492889"/>
         </scene>
-        <!--내 바구니 함-->
+        <!--현재 진행 중인 루틴-->
         <scene sceneID="swz-li-CMF">
             <objects>
                 <tableViewController id="ccs-yK-umD" customClass="TableViewController" customModule="Fitness_Sport" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eGA-tQ-GXq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Vip-DX-Bcy">
-                                <rect key="frame" x="0.0" y="50" width="414" height="44.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="390" height="44.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vip-DX-Bcy" id="6jj-qd-aCy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="44.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="01I-wH-Bhw" kind="show" identifier="sgDetail" id="l7t-ys-DdH"/>
+                                    <segue destination="gOk-9x-h2F" kind="show" id="6bz-aT-OCI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -180,53 +180,36 @@
                             <outlet property="delegate" destination="ccs-yK-umD" id="L3Y-dG-r7n"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="내 바구니 함" id="Oru-pN-G89"/>
+                    <navigationItem key="navigationItem" title="현재 진행 중인 루틴" id="Oru-pN-G89"/>
                     <connections>
                         <outlet property="tvListView" destination="eGA-tQ-GXq" id="Yg5-ma-TmB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ul0-UY-RP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="-534"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="h2r-7C-6Qs">
-            <objects>
-                <navigationController id="1XH-Pm-HvE" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="cWy-8K-Ib3"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="naj-cX-XRB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ccs-yK-umD" kind="relationship" relationship="rootViewController" id="0xg-eO-3v7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DIv-31-Or0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-846" y="-1400"/>
+            <point key="canvasLocation" x="-903" y="-461"/>
         </scene>
         <!--Workout-->
         <scene sceneID="fnY-hx-3VM">
             <objects>
                 <viewController id="gOk-9x-h2F" customClass="WorkoutListViewController" customModule="Fitness_Sport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VaC-TA-qrP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V0N-Ld-zVM">
-                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <rect key="frame" x="0.0" y="101" width="390" height="660"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="83" id="j28-6T-bqm" customClass="WorkoutTableViewCell" customModule="Fitness_Sport" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="83"/>
+                                        <rect key="frame" x="0.0" y="50" width="390" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j28-6T-bqm" id="tuG-rh-LX1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9d-nz-jGf">
-                                                    <rect key="frame" x="16" y="0.0" width="382" height="75"/>
+                                                    <rect key="frame" x="16" y="0.0" width="358" height="75"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kng-Ki-G3w">
                                                             <rect key="frame" x="18" y="16" width="44" height="43"/>
@@ -236,7 +219,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSR-rS-azb">
-                                                            <rect key="frame" x="82" y="37.666666666666664" width="282" height="0.0"/>
+                                                            <rect key="frame" x="82" y="37.666666666666664" width="258" height="0.0"/>
                                                             <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -291,26 +274,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlu-Ju-6RX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="-534"/>
+            <point key="canvasLocation" x="72" y="-461"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="vOY-8F-og3">
+        <scene sceneID="jZw-aH-fyl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="01I-wH-Bhw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mq8-gT-zBw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="mcN-Uz-jS7"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kzi-hF-dGw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sDo-em-3dC">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="gOk-9x-h2F" kind="relationship" relationship="rootViewController" id="Fsa-JN-VUV"/>
+                        <segue destination="Vgd-MY-Hno" kind="relationship" relationship="rootViewController" id="dW0-Zo-1bH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ae-R3-wbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPe-hl-NsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="-534"/>
+            <point key="canvasLocation" x="-1813.0434782608697" y="-1400.2232142857142"/>
         </scene>
     </scenes>
     <resources>
