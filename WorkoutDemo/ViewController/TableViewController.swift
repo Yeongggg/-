@@ -9,7 +9,7 @@
 import UIKit
 
 var item = ["황철순의 가슴이 웅장해 진다"]
-
+var test = 1
 class TableViewController: UITableViewController {
 
     @IBOutlet var tvListView: UITableView!
